@@ -1,0 +1,37 @@
+.select{
+    background-color: var(--color-white);
+    width: 96%;
+    position: relative;
+    left: 25px;
+    border-radius: 5px;
+    height: 100vh;
+    /* padding: 25px 35px; */
+}
+.select .container{
+    background-color: var(--color-white);
+    width: 96%;
+    position: relative;
+    left: 25px;
+    border-radius: 5px;
+    height: 90vh;
+    padding: 25px 35px;
+}
+.chart{
+    display: flex;
+    justify-content: center;
+    background: #f1f1f1;
+    border-radius: 10px;
+    width: 99%;
+    height:50%;
+}
+
+/* responsiveness */
+@media screen and (max-width: 600px) {
+    .select{
+        left: 10px;
+    }
+    .select .container{
+        left: 0;
+        padding: 15px;
+    }
+}

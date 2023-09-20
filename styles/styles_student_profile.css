@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    background-color: #f3f3f3;
+}
+
+.wrapper {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 65%;
+    display: flex;
+    box-shadow: 0 1px 20px 0 rgba(69, 90, 100, .08);
+}
+h1 {
+    display: inline-block;
+    color: var(--dark);
+    margin: 18px 18px 0 18px;
+}
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    grid-gap: 16px;
+    list-style: none;
+    margin: 18px;
+}
+
+.breadcrumb li {
+    color: var(--dark);
+    
+}
+
+ .breadcrumb li a {
+    color: var(--dark-grey);
+    pointer-events: none;
+    text-decoration: none;
+}
+
+.breadcrumb li a.active {
+    color: var(--color--blue);
+    pointer-events: unset;
+    text-decoration: none;
+}
+
+.wrapper .left {
+    width: 35%;
+    background: linear-gradient(to right, #004f83, #18cbcec4);
+    padding: 30px 25px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-align: center;
+    color: #fff;
+}
+
+.wrapper .left img {
+    border-radius: 5px;
+    margin-bottom: 10px;
+    height: 35vh;
+    margin-top: 45px;
+}
+
+.wrapper .left h4 {
+    margin-bottom: 10px;
+}
+
+.wrapper .left p {
+    font-size: 12px;
+}
+
+.wrapper .right {
+    width: 65%;
+    background: #fff;
+    padding: 30px 25px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.wrapper .right .info,
+.wrapper .right .projects {
+    margin-bottom: 25px;
+}
+
+.wrapper .right .info h3,
+.wrapper .right .projects h3 {
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e0e0e0;
+    color: #353c4e;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.wrapper .right .info_data,
+.wrapper .right .projects_data {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.wrapper .right .info_data .data,
+.wrapper .right .projects_data .data {
+    width: 45%;
+}
+
+.wrapper .right .info_data .data h4,
+.wrapper .right .projects_data .data h4 {
+    color: #353c4e;
+    margin-bottom: 5px;
+}
+
+.wrapper .right .info_data .data p,
+.wrapper .right .projects_data .data p {
+    font-size: 13px;
+    margin-bottom: 10px;
+    color: #919aa3;
+}
+
+.wrapper .social_media ul {
+    display: flex;
+}
+
+.wrapper .social_media ul li {
+    width: 45px;
+    height: 45px;
+    /* background: linear-gradient(to right, #004f83, #18cbcec4); */
+    margin-right: 10px;
+    /* border-radius: 5px; */
+    text-align: center;
+    line-height: 45px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.wrapper .social_media ul li a {
+    color: black;
+    display: block;
+    font-size: 18px;
+}
+.wrapper .social_media ul li:hover {
+    border: 1px solid blue;
+}
+.wrapper .social_media ul li a:hover {
+    color: blue;
+    display: block;
+    font-size: 18px;
+}
+
+/* .credits{
+    position: relative;
+    left: -112px;
+} */
+.credits .box{
+    display: flex;
+    align-items: center;
+    
+}
+
+.credits .box .coins{
+   display: flex;
+   margin-left: 15px;
+}
+
+.credits .box .coins i{
+    font-size: 10vh;
+    color: goldenrod;
+}
+.credits h4{
+    font-size: 30px;
+    color: #353c4e;
+}
+.credits h5{
+    font-size: 47px;
+    margin: 0px 0 0 14px;
+}
+
+.sidebar.open~.wrapper {
+    width: 75vw;
+  }
+
+
+
+  /* responsiveness */
+@media screen and (max-width: 600px) {
+    .home-section{
+        left: 50px;
+        width: 100%;
+        height: 100%;
+    }
+    .wrapper{
+        display: block;
+        width: 90%;
+        top: 325px;
+        left: 50%;
+       
+    }
+    .wrapper .left{
+        width: 100%;
+        border-radius: 5px;
+    }
+    .wrapper .left img {
+        height: 10vh;
+    }
+    .wrapper .right{
+        width: 100%;
+    }
+    .wrapper .right .info_data .data, .wrapper .right .projects_data .data {
+        font-size: 12px;
+    }
+    .wrapper .right .info_data .data p, .wrapper .right .projects_data .data p {
+        font-size: 9px;
+    }
+    .wrapper .right .info, .wrapper .right .projects {
+        margin-bottom: 10px;
+    }
+    .wrapper .social_media ul li {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+    }
+    .credits h4 {
+        font-size: 16px;
+    }
+    .credits .box .coins i {
+        font-size: 32px;
+        margin-top: 16px;
+    }
+    .credits h5 {
+        font-size: 40px;
+        margin: 0px 0 0 14px;
+    }
+  
+  }
